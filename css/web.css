@@ -1,0 +1,375 @@
+#main {
+    margin-top: 80px;
+}
+
+.row1 {
+    height: 180px;
+    text-align: center;
+    background: url(../img/bg/pink2.png) no-repeat right;
+    background-size: contain;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.imgsmall {
+    background: url(../img/bg/pink2.png) no-repeat right;
+    background-size: contain;
+}
+
+.row1 p {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 3rem;
+    color: #777;
+}
+
+.r1 {
+    padding: 20px 0;
+}
+
+.imgbig {
+    background: url(../img/bg/pink1.png) no-repeat left bottom;
+    background-size: contain;
+}
+
+.r .wp {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r1 .wp img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.r1.gov .wp img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.r1.gov .wp {
+    flex-wrap: wrap;
+}
+
+.r1.gov .wp a {
+    width: 43%;
+    margin: 10px;
+    position: relative;
+    transition: all .8s;
+    height: 275px;
+    overflow: hidden;
+}
+
+.r1.gov .wp a::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.615);
+    display: none;
+    width: 100%;
+    height: 275px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 275px;
+    transition: all .8s;
+}
+
+.r1.gov .wp a:nth-child(1)::before {
+    content: '勞動部雲嘉南分屬';
+}
+
+.r1.gov .wp a:nth-child(2)::before {
+    content: '彰化縣勞工處';
+}
+
+.r1.gov .wp a:nth-child(3)::before {
+    content: '內政部地政司';
+}
+
+.r1.gov .wp a:nth-child(4)::before {
+    content: '台中土木公會';
+}
+
+.r1.gov .wp a:hover::before {
+    display: block;
+}
+
+.r1 .wp p {
+    width: 40%;
+    line-height: 2rem;
+    margin-left: 5%;
+    color: #777;
+}
+
+.nopadding {
+    margin-left: 0;
+    margin-right: 5%;
+}
+
+a.btn {
+    display: block;
+    width: 100px;
+    line-height: 2rem;
+    text-align: center;
+    margin: 5px auto;
+    /* border-bottom: 2px solid #796868;
+    background-color: #999;
+    color: #fff; */
+    color: #c99494;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: all 1s;
+}
+
+a.btn:hover {
+    background-color: #c99494;
+    color: #fff;
+}
+
+.r1>p, .r2>p {
+    text-align: center;
+    color: #c99494;
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+
+.imgsmall>p {
+    background-color: #d1a1a1;
+    /* border: 1px solid #d1a1a1; */
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 40px auto 0;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#main .r2 .wp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 40px;
+}
+
+/* #main .r2 .wp2 {
+    flex-direction: column;
+
+} */
+
+.r2 .wp content {
+    margin: 20px 0;
+    width: 30%;
+}
+
+#main .r2 .wp2 content {
+    margin: 10px auto;
+    /* width: 80%; */
+    overflow: hidden;
+    box-shadow: 2px 2px 15px rgb(237, 237, 237);
+}
+
+.r2 .wp content img {
+    width: 90%;
+    height: 180px;
+    object-fit: cover;
+    margin: 0 5%;
+}
+
+.r2 .wp2 content img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 0;
+    transition: all .8s;
+}
+
+.r2 .wp2 content a {
+    width: 100%;
+    background-color: #c7c7c7;
+    color: #fff;
+    margin: -7px 0 0;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.r2 .wp2 content:hover a {
+    background-color: #c99494;
+}
+
+.r2 .wp2 content:hover img {
+    width: 120%;
+    margin-left: -10%;
+    object-position: top center;
+}
+
+.r2 .wp content:nth-child(1) img {
+    object-position: 21%;
+}
+
+.r2 .wp2 content:nth-child(1) img {
+    object-position: 55%;
+}
+
+.r2 .wp content:nth-child(2) img {
+    object-position: 64%;
+}
+
+.r2 .wp content:nth-child(3) img {
+    object-position: 20%;
+}
+
+.r3 .wp {
+    display: block;
+    text-align: center;
+}
+
+.r3 .wp img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.r1 .wp p .title {
+    display: block;
+    width: 120px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto 20px;
+    background-color: #d1a9a9;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.r1 .wp p .title.long {
+    width: 230px;
+}
+
+.r1 .wp p .text {
+    background-color: #fff;
+    color: #c99494;
+    width: auto;
+}
+
+.r3 .wp p span {
+    color: #777;
+}
+
+@media(max-width:950px) {
+    #main {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:630px) {
+    .r2 .wp content {
+        margin: 20px 3px;
+    }
+}
+
+@media(max-width:600px) {
+    .row1 p {
+        width: 60%;
+    }
+
+    .r2 .wp content img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media(max-width:500px) {
+    .row1 p {
+        width: 70%;
+    }
+
+    .r .wp {
+        flex-direction: column;
+    }
+
+    .r1 .wp .image, .r2 .wp content img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .r1 .wp p {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .r1 .wp p span {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .r3 .wp img {
+        width: 120%;
+    }
+
+    .r3 .wp {
+        overflow: hidden;
+    }
+
+    .r1 .wp img {
+        width: 80%;
+    }
+}
+
+@media(max-width:450px) {
+    .r1 .wp img {
+        width: 90%;
+    }
+}
+
+@media(max-width:414px) {
+    .r2 .wp content img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .row1 p {
+        width: 80%;
+    }
+
+    .r1 .wp p {
+        width: 70%;
+    }
+
+    .r3 .wp img {
+        width: 150%;
+    }
+}
+
+@media(max-width:400px) {
+    .r1 .wp img {
+        width: 100%;
+    }
+}
+
+@media(max-width:375px) {
+    .row1 p {
+        width: 90%;
+    }
+}
+
+@media(max-width:320px) {
+    .r1 .wp p {
+        width: 80%;
+    }
+
+    .row1 p {
+        width: 98%;
+        font-size: 0.8rem;
+    }
+}
