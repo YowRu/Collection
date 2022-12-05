@@ -419,6 +419,10 @@
     width: 350px;
 }
 
+#main .wp .r4bg .photo_M {
+    display: none;
+}
+
 #main .wp .r4bg .left {
     display: block;
     height: 300px;
