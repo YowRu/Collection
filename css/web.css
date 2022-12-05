@@ -3,13 +3,28 @@
 }
 
 .row1 {
-    height: 180px;
+    padding: 40px 0 0;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+.row1:after {
+    content: '';
+    display: block;
+    height: 280px;
+    width: 300px;
     text-align: center;
     background: url(../img/bg/pink2.png) no-repeat right;
     background-size: contain;
-    padding: 40px 0;
-    margin-bottom: 40px;
-    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.textarea {
+    height: 40px;
+    width: auto;
 }
 
 .imgsmall {
