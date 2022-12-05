@@ -76,7 +76,7 @@
     margin: 10px;
     position: relative;
     transition: all .8s;
-    height: 275px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -254,11 +254,7 @@ a.btn:hover {
 }
 
 .r2 .wp content:nth-child(2) img {
-    object-position: 64%;
-}
-
-.r2 .wp content:nth-child(3) img {
-    object-position: 20%;
+    object-position: right;
 }
 
 .r3 .wp {
@@ -302,11 +298,27 @@ a.btn:hover {
     #main {
         margin-top: 40px;
     }
+
+    .textarea {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width:800px) {
+    .r2 .wp content {
+        width: 47%;
+        margin-bottom: 0;
+    }
+
+    .r2 .wp content img {
+        width: 92%;
+    }
 }
 
 @media(max-width:630px) {
     .r2 .wp content {
-        margin: 20px 3px;
+        margin: 10px 3px 0;
     }
 }
 
@@ -315,10 +327,10 @@ a.btn:hover {
         width: 60%;
     }
 
-    .r2 .wp content img {
-        width: 160px;
-        height: 160px;
+    .textarea {
+        display: none;
     }
+
 }
 
 @media(max-width:500px) {
@@ -330,7 +342,11 @@ a.btn:hover {
         flex-direction: column;
     }
 
-    .r1 .wp .image, .r2 .wp content img {
+    .r.reverse .wp {
+        flex-direction: column-reverse;
+    }
+
+    .r1 .wp .image {
         width: 300px;
         height: 300px;
     }
@@ -352,8 +368,12 @@ a.btn:hover {
         overflow: hidden;
     }
 
-    .r1 .wp img {
+    .r1 .wp img, .r2 .wp content, .r1.gov .wp a {
         width: 80%;
+    }
+
+    .r2 .wp content img {
+        height: 245px;
     }
 }
 
