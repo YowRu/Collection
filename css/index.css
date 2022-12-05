@@ -16,7 +16,13 @@
 
 #main .wp .row1 .textarea {
     display: block;
-    width: 60%;
+    width: 70%;
+    margin: 20px auto;
+}
+
+#main .wp .row1 .textarea_M {
+    display: none;
+    width: 50%;
     margin: 20px auto;
 }
 
@@ -177,9 +183,9 @@
 }
 
 #main .wp .r4bg>a {
-    position: absolute;
-    bottom: 18%;
-    left: 45%;
+    position: relative;
+    bottom: -65%;
+    left: 0;
 }
 
 #main .wp .r6bg>a {
@@ -236,6 +242,7 @@
     overflow: hidden;
 }
 
+/* 
 #main .wp .r2bg content:nth-of-type(1) .image {
     background: url(../img/psai/BusinessCard.png) no-repeat center;
     background-size: cover;
@@ -260,7 +267,7 @@
     width: 57%;
     line-height: 2rem;
     color: #999;
-}
+} 
 
 #main .wp .r2bg content p span {
     font-size: 1rem;
@@ -270,7 +277,7 @@
     border-bottom: 1px solid #999;
     padding-bottom: 5px;
 }
-
+*/
 #main .wp .r6bg, #main .wp .r3bg {
     background-color: #f2f2f2;
     height: 500px;
@@ -480,8 +487,16 @@
     text-align: center;
 }
 
+@media (max-width:1000px) {
+    #main .wp .row1 .textarea {
+        width: 80%;
+    }
+}
 
 @media(max-width:799px) {
+    #main .wp .row1 .textarea {
+        width: 90%;
+    }
 
     #main .wp .r3bg .photo .image:nth-of-type(7),
     #main .wp .r3bg .photo .image:nth-of-type(8) {
@@ -492,6 +507,14 @@
 @media(max-width:750px) {
     #main .wp .r2bg content {
         justify-content: space-around;
+    }
+
+    #main .wp .row1 .textarea {
+        display: none;
+    }
+
+    #main .wp .row1 .textarea_M {
+        display: block;
     }
 }
 
@@ -516,7 +539,7 @@
     }
 
     #main .wp .r1bg {
-        height: 942px;
+        height: 1062px;
     }
 
     #main .wp .r6bg {
@@ -524,20 +547,68 @@
         height: 470px;
     }
 
-    #main .wp .r6bg .left, #main .wp .r6bg .right {
+    #main .wp .r6bg .right {
         display: none;
     }
 
-    #main .wp .r6bg .m {
-        display: block;
+    #main .wp .r6bg .left {
+        left: 29%;
     }
 
-    #main .wp .r2bg {
-        padding-top: 180px;
+    #main .wp .r6bg img.text {
+        left: 31%;
+    }
+
+    #main .wp .r6bg img.text {
+        top: -92px;
+        left: 31%;
+    }
+
+    #main .wp .row1 .textarea_M {
+        width: 60%;
     }
 
     #main .wp .r1bg .web a span {
         margin: 8% auto;
+    }
+
+    #main .wp .r1bg .web a:nth-of-type(2) {
+        background: url(../img/web/LCY.png) no-repeat right 19%;
+        background-size: cover;
+    }
+
+    #main .wp .r1bg .web a:nth-of-type(3) {
+        background: url(../img/index/55688.png) no-repeat center 42%;
+        background-size: cover;
+    }
+
+    #main .wp .r1bg .web a:nth-of-type(4) {
+        background: url(../img/web/beauty2.png) no-repeat center top;
+        background-size: cover;
+    }
+
+    #main .wp .r1bg .web a:nth-of-type(5) {
+        background: url(../img/web/doing.png) no-repeat center 73%;
+        background-size: cover;
+    }
+
+    #main .wp .r1bg .web a:nth-of-type(6) {
+        background: url(../img/index/game.png) no-repeat center;
+        background-size: cover;
+    }
+
+    #main .wp .r1bg .web a:nth-of-type(7) {
+        background: url(../img/web/k1.png) no-repeat center;
+        background-size: cover;
+    }
+
+    #main .wp .r1bg .web a:nth-of-type(8) {
+        background: url(../img/index/4.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    #main .wp .r1bg .web a:nth-of-type(9) {
+        display: none;
     }
 }
 
@@ -547,15 +618,46 @@
     }
 
     #main .wp {
-        margin: 20px auto 40px;
+        margin: 40px auto 0px;
+    }
+
+    #main .wp .r4bg {
+        height: 560px;
+    }
+
+    #main .wp .r4bg .left,
+    #main .wp .r4bg .right {
+        display: none;
+    }
+
+    #main .wp .r4bg .photo_M {
+        display: block;
+        width: 80%;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    #main .wp .r4bg>a {
+        bottom: -35px;
     }
 }
 
 @media(max-width:600px) {
+    #main .wp .r6bg .left {
+        left: 26%;
+    }
+
+    #main .wp .r6bg img.text {
+        left: 28%;
+    }
 
     #main .wp .r3bg .photo .image:nth-of-type(5),
     #main .wp .r3bg .photo .image:nth-of-type(6) {
         display: none;
+    }
+
+    #main .wp .row1 .textarea_M {
+        width: 70%;
     }
 }
 
@@ -565,7 +667,6 @@
     }
 
     #main .wp .r1bg .web a, #main .wp .r1bg .web a:before {
-        height: 150px;
         margin-bottom: 10px;
     }
 
@@ -608,14 +709,11 @@
     }
 
     #main .wp .r1bg {
-        height: 746px;
+        height: 846px;
     }
 }
 
 @media(max-width:540px) {
-    #main .wp .r2bg {
-        padding-top: 550px;
-    }
 
     #main .wp .r1bg .web {
         padding-left: 20px;
@@ -640,40 +738,35 @@
     }
 
     #main .wp .r1bg {
-        height: 1420px;
-    }
-
-    #main .wp .r2bg {
-        padding-top: 150px;
-    }
-
-    #main .wp .r1bg .web a:nth-of-type(2) {
-        background: url(../img/index/4.png) no-repeat center 19%;
-        background-size: cover;
-    }
-
-    #main .wp .r1bg .web a:nth-of-type(3) {
-        background: url(../img/index/game2.png) no-repeat center 42%;
-        background-size: cover;
-    }
-
-    #main .wp .r1bg .web a:nth-of-type(5) {
-        background: url(../img/index/analytics.png) no-repeat center 61%;
-        background-size: cover;
-    }
-
-    #main .wp .r1bg .web a:nth-of-type(7) {
-        background: url(../img/index/78392_1.jpg) no-repeat center 89%;
-        background-size: cover;
-    }
-
-    #main .wp .r1bg {
-        margin-top: -361px;
+        height: 1320px;
     }
 
     #main .wp .r1bg .web a span {
         line-height: 110px;
         height: 112px;
+    }
+
+    #main .wp .r1bg .web a:nth-of-type(6),
+    #main .wp .r1bg .web a:nth-of-type(7), #main .wp .r1bg .web a:nth-of-type(8) {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    #main .wp .r5bg .contact {
+        width: 70%;
+    }
+
+    #main .wp .r6bg .left {
+        left: 22%;
+    }
+
+    #main .wp .r6bg img.text {
+        left: 24%;
+    }
+
+    #main .wp .r3bg img {
+        width: 80%;
     }
 }
 
@@ -682,13 +775,32 @@
         width: 370px;
     }
 
-    #main .wp .r5bg .contact {
-        padding: 70px;
+    #main .wp .row1 .textarea_M {
+        width: 80%;
     }
 
+    #main .wp .r6bg .left {
+        left: 18%;
+    }
+
+    #main .wp .r6bg img.text {
+        left: 20%;
+    }
 }
 
 @media(max-width:400px) {
+    #main .wp .r4bg .text {
+        width: 80%;
+    }
+
+    #main .wp .r6bg .left {
+        left: 16%;
+    }
+
+    #main .wp .r6bg img.text {
+        left: 18%;
+    }
+
     #main .wp .row1 img {
         width: 350px;
     }
@@ -720,6 +832,14 @@
         height: 150px;
         width: 150px;
     }
+
+    #main .wp .r6bg img.text {
+        left: 15%;
+    }
+
+    #main .wp .r6bg .left {
+        left: 13%;
+    }
 }
 
 @media(max-width:360px) {
@@ -734,5 +854,13 @@
 
     #main .wp .r2bg content .image {
         width: 90%;
+    }
+
+    #main .wp .r6bg img.text {
+        left: 12%;
+    }
+
+    #main .wp .r6bg .left {
+        left: 10%;
     }
 }
