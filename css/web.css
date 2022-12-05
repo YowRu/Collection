@@ -130,6 +130,23 @@ a.btn {
     transition: all 1s;
 }
 
+a.btn.more {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    line-height: 50px;
+    background-color: rgba(134, 134, 134, 0.63);
+    margin: 42px auto;
+}
+
+a.btn.more img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 19px;
+}
+
 a.btn:hover {
     background-color: #c99494;
     color: #fff;
@@ -144,7 +161,6 @@ a.btn:hover {
 
 .imgsmall>p {
     background-color: #d1a1a1;
-    /* border: 1px solid #d1a1a1; */
     color: #fff;
     width: 200px;
     height: 40px;
