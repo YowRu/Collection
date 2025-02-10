@@ -48,8 +48,10 @@ header .wp img {
 }
 
 header .up {
-    position: absolute;
-    right: 5%;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header .up a {
